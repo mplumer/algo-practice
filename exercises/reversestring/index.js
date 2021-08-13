@@ -16,24 +16,25 @@
 // For each character in the provided string, Take the character and add it to the start if 'reversed'
 // Return the variable 'reversed'
 
-// function reverse(str) {
-//     let reversed = '';
+function reverse(str) {
+    let reversed = '';
 
-//     for (let character of str) {
-//         reversed = character + reversed;
-//     }
+    for (let character of str) {
+        reversed = character + reversed;
+    }
 
-//     return reversed;
-// }
+    return reversed;
+}
 
-// module.exports = reverse;
+module.exports = reverse;
 
 // --- Solution 3
 // Turn string into array using split
 // set up reduce helper funtion
 
-function reverse(str) {
-    return str.split('').reduce((rev, char) => char + rev, '');
-}
+// function reverse(str) {
+//     return str.split('').reduce((rev, char) => char + rev, '');
+// }
 
-module.exports = reverse;
+
+// module.exports = reverse;
